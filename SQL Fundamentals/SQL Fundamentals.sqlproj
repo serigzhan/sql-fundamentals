@@ -59,6 +59,7 @@
     <Folder Include="dbo" />
     <Folder Include="dbo\Tables" />
     <Folder Include="PublishLocations" />
+    <Folder Include="PostDeployScripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Person.sql" />
@@ -68,5 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishLocations\LocalRegistrationDB.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="PostDeployScripts\Script.PostDeploySeed.sql" />
   </ItemGroup>
 </Project>
