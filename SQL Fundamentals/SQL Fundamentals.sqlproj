@@ -61,6 +61,7 @@
     <Folder Include="PublishLocations" />
     <Folder Include="PostDeployScripts" />
     <Folder Include="dbo\Views" />
+    <Folder Include="dbo\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Person.sql" />
@@ -68,6 +69,7 @@
     <Build Include="dbo\Tables\Employee.sql" />
     <Build Include="dbo\Tables\Company.sql" />
     <Build Include="dbo\Views\EmployeeInfo.sql" />
+    <Build Include="dbo\Stored Procedures\spEmployee_Info_Insert.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishLocations\LocalRegistrationDB.publish.xml" />
