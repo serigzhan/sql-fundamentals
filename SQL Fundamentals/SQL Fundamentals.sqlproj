@@ -62,6 +62,7 @@
     <Folder Include="PostDeployScripts" />
     <Folder Include="dbo\Views" />
     <Folder Include="dbo\Stored Procedures" />
+    <Folder Include="dbo\Triggers" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\Person.sql" />
@@ -70,6 +71,7 @@
     <Build Include="dbo\Tables\Company.sql" />
     <Build Include="dbo\Views\EmployeeInfo.sql" />
     <Build Include="dbo\Stored Procedures\spEmployee_Info_Insert.sql" />
+    <Build Include="dbo\Triggers\AfterEmployeeCreated.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishLocations\LocalRegistrationDB.publish.xml" />
