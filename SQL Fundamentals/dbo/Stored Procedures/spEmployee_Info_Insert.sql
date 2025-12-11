@@ -42,10 +42,10 @@ BEGIN
 	SET @AddressId = CAST(SCOPE_IDENTITY() AS INT);
 
 	INSERT INTO dbo.Person (FirstName, LastName)
-	VALUES (ISNULL(@FirstName, 'Unknown'), ISNULL(@LastName, 'Unknown'));
+	VALUES (ISNULL(@FirstName, ''), ISNULL(@LastName, ''));
 
 	SET @PersonId = CAST(SCOPE_IDENTITY() AS INT);
 
 	INSERT INTO dbo.Employee (AddressId, PersonId, CompanyName, Position, EmployeeName)
-    VALUES (@AddressId, @PersonId, @CompanyName, @Position, @EmployeeName);
+    VALUES (@AddressId, @PersonId, LEFT(@CompanyName, 20), @Position, @EmployeeName);
 END;
